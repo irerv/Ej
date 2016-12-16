@@ -1,1 +1,30 @@
-
+<div class="content" style="background-color: #6CF;">
+  <div><img class="image" src="img/the-beatles-abbey-road.jpg">
+    <section>The Beatles fue una banda de pop/rock inglesa activa durante la década de 1960, y reconocida como la más exitosa comercialmente y críticamente aclamada en la historia de la música popular.1 2 3 4 5 Formada en Liverpool, estuvo constituida desde 1962 por John Lennon (guitarra rítmica, vocalista), Paul McCartney (bajo, vocalista), George Harrison (guitarra solista, vocalista) y Ringo Starr (batería, vocalista). Enraizada en el skiffle y el rock and roll de los años cincuenta, la banda trabajó más tarde con distintos géneros musicales, que iban desde las baladas pop hasta el rock psicodélico, incorporando a menudo elementos clásicos, entre otros, de forma innovadora en sus canciones. La naturaleza de su enorme popularidad, que había emergido primeramente con la moda de la «Beatlemanía», se transformó al tiempo que sus composiciones se volvieron más sofisticadas.</section>
+    <section> Llegaron a ser percibidos como la encarnación de los ideales progresistas, extendiendo su influencia en las revoluciones sociales y culturales de la década de 1960. Con una formación inicial de cinco componentes que incluía a Lennon, McCartney, Harrison, Stuart Sutcliffe (bajo) y Pete Best (batería), la banda construyó su reputación en los clubes de Liverpool y Hamburgo sobre un período de tres años a partir de 1960. Sutcliffe abandonó la formación en 1961, y Best fue reemplazado por Starr al año siguiente. Establecidos como grupo profesional después de que Brian Epstein les ofreciera ser su representante, y con su potencial musical mejorado por la creatividad del productor George Martin, lograron éxito comercial en el Reino Unido a finales de 1962 con su primer sencillo, «Love Me Do». A partir de ahí, fueron adquiriendo popularidad internacional a lo largo de los siguientes años, en los cuales hicieron un extenso número de giras hasta 1966, año en que cesaron la actividad en vivo para dedicarse únicamente a la grabación en el estudio hasta su disolución en 1970. Después, todos sus integrantes se embarcaron en exitosas carreras independientes de diversa duración. </section>
+    <section>Lennon sería asesinado a las afueras de su casa de Nueva York en 1980, y Harrison fallecería de cáncer en 2001. McCartney y Starr, los dos miembros sobrevivientes, aún permanecen musicalmente activos. Durante sus años de estudio crearon algunos de sus mejores materiales, incluyendo el álbum Sgt. Pepper's Lonely Hearts Club Band (1967), considerado por muchos como una obra maestra. Cuatro décadas después de su separación, la música que crearon continúa siendo popular. Se mantienen como el grupo con más números uno en las listas británicas, situando más álbumes en esta posición que cualquier otra agrupación musical.6 De acuerdo con las certificaciones de la RIAA, han vendido más discos en los Estados Unidos que cualquier otro artista.4 En 2008, la revista Billboard publicó una lista de los artistas más exitosos de todos los tiempos en el Hot 100 con motivo del 50º aniversario de la lista de éxitos,7 y The Beatles fueron colocados en el número uno. Fueron galardonados con siete premios Grammy,8 y recibieron un total de quince premios Ivor Novello de parte de la British Academy of Songwriters, Composers and Authors.9 </section>
+    <section>En 2004, la revista Rolling Stone los clasificó en el número uno en su lista de los «100 artistas más grandes de todos los tiempos».1 De acuerdo con la misma publicación, la música innovadora de The Beatles y su impacto cultural ayudaron a definir los años sesenta.10 En 2010, el canal de televisión especializado en música VH1 los clasificó en el número uno en su lista de los «100 artistas más grandes de todos los tiempos».11 También fueron colocados en el puesto número 1 por el sitio de Internet Acclaimed Music en su lista «The Top 1000 Artists of All Time».2
+      <section>
+  </div>
+  <br>
+  <div ng-controller="theBeatlesController as controller" class="videogular-container">
+    <videogular vg-theme="controller.config.theme.url">
+      <vg-media vg-src="controller.config.sources" vg-youtube="rel=1;showinfo=1">
+      </vg-media>
+      <vg-controls vg-autohide="controller.config.plugins.controls.autoHide" vg-autohide-time="controller.config.plugins.controls.autoHideTime">
+        <vg-play-pause-button></vg-play-pause-button>
+        <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
+        <vg-scrub-bar>
+          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        </vg-scrub-bar>
+        <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
+        <vg-time-display>{{ totalTime | date:'mm:ss':'+0000' }}</vg-time-display>
+        <vg-volume>
+          <vg-mute-button></vg-mute-button>
+          <vg-volume-bar></vg-volume-bar>
+        </vg-volume>
+        <vg-fullscreen-button></vg-fullscreen-button>
+      </vg-controls>
+    </videogular>
+  </div>
+</div>

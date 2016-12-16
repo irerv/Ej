@@ -1,24 +1,30 @@
 <!doctype html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
-  <!-- <title>Bandas del siglo XX</title> -->
+  <title>Bandas del siglo XX</title>
+  <meta property="og:title" content="Angular Rocks" />
+  <meta property="og:description " content="Esto es la descripción por defecto" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+  <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="js/angular.js"></script>
   <script type="text/javascript" src="js/angular-ui-router.js"></script>
   <script src="js/app.js"></script>
-  <!-- <script src="js/app.init.js"></script> -->
 </head>
 
 <body ng-app="ejKubide" ng-controller='mainController'>
-  <ul>
-    <li><a href="" ui-sref="foo">Foo</a> </li>
-    <li><a href="" ui-sref="bar">Bar</a></li>
-    <li><a href="" ui-sref="therollingstones">The Rolling Stones</a></li>
-    <li><a href="" ui-sref="thebeatles">The Beatles</a></li>
-    <li><a href="" ui-sref="queen">Queen</a></li>
-  </ul>
   <div ui-view></div>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="bower_components/videogular/videogular.js"></script>
+  <!-- <script src="bower_components/videogular-controls/vg-controls.js"></script> -->
+  <script src="bower_components/videogular-overlay-play/vg-overlay-play.js"></script>
+  <script src="bower_components/videogular-poster/vg-poster.js"></script>
+  <script src="bower_components/videogular-buffering/vg-buffering.js"></script>
+  <script src="http://static.videogular.com/scripts/controls/latest/vg-controls.js"></script>
+  <script src="http://static.videogular.com/scripts/youtube/latest/youtube.js"></script>
 </body>
 
 </html>
